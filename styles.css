@@ -459,35 +459,65 @@ p {
   gap: 1.4rem;
 }
 
+.policy-page {
+  width: min(calc(100% - 2rem), 980px);
+}
+
+.policy-page .site-header,
+.policy-page .site-footer,
+.policy-page .policy-hero,
+.policy-page .policy-content {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: none;
+  box-shadow: 0 10px 30px rgba(44, 90, 160, 0.08);
+}
+
+.policy-page .site-header,
+.policy-page .site-footer {
+  border-radius: 24px;
+}
+
+.policy-page .policy-hero,
+.policy-page .policy-content {
+  border-radius: 24px;
+}
+
 .policy-hero h1 {
-  max-width: 15ch;
-  margin-bottom: 1rem;
+  max-width: 16ch;
+  margin-bottom: 0.9rem;
 }
 
 .policy-summary {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.3rem;
 }
 
 .policy-summary > div {
-  padding: 1rem 1.05rem;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(45, 55, 72, 0.1);
-  background: rgba(255, 255, 255, 0.68);
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(45, 55, 72, 0.08);
+  background: #f8fbff;
 }
 
 .policy-content {
   display: grid;
-  gap: 1.6rem;
+  gap: 1.3rem;
 }
 
 .policy-content section {
   display: grid;
-  gap: 0.9rem;
+  gap: 0.75rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(45, 55, 72, 0.08);
+}
+
+.policy-content section:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .policy-content h2 {
-  font-size: clamp(1.45rem, 2.3vw, 2rem);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
 }
 
 .table-wrapper {
@@ -498,8 +528,8 @@ p {
   width: 100%;
   border-collapse: collapse;
   min-width: 760px;
-  background: rgba(255, 255, 255, 0.68);
-  border-radius: var(--radius-md);
+  background: #ffffff;
+  border-radius: 14px;
   overflow: hidden;
 }
 
@@ -513,7 +543,7 @@ p {
 }
 
 .policy-table th {
-  background: rgba(66, 153, 225, 0.14);
+  background: #f1f7ff;
   color: var(--heading);
   font-size: 0.92rem;
 }
@@ -528,7 +558,7 @@ p {
   padding: 1rem 1.1rem;
   border-left: 4px solid var(--primary);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  background: rgba(235, 248, 255, 0.95);
+  background: #f6fbff;
 }
 
 .contact-card {
@@ -593,6 +623,10 @@ p {
   .hero {
     border-radius: 24px;
     padding: 1.15rem;
+  }
+
+  .policy-page {
+    width: min(calc(100% - 1rem), 980px);
   }
 
   .metric-grid {

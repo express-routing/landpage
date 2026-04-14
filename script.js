@@ -1,6 +1,6 @@
 const siteConfig = {
   brandName: "Partiu Entrega",
-  controllerName: "Diego Serrat",
+  controllerName: "Equipe Partiu Entrega",
   contactEmail: "partiu.entrega.app@gmail.com",
   updatedAt: "13 de abril de 2026",
 };
