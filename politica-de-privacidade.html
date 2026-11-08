@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Política de Privacidade | Partiu Entrega</title>
     <meta
       name="description"
@@ -12,27 +12,25 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell policy-page">
-      <header class="site-header">
-        <a class="brand" href="./index.html">
-          <span class="brand-mark">
-            <img
-              src="./assets/icon-app.png"
-              alt="Icone do Partiu Entrega"
-            />
-          </span>
+    <header class="nav">
+      <div class="wrap">
+        <a class="nav-brand" href="./index.html">
+          <img src="./assets/icon-app.png" alt="" />
           <span data-config="brandName">Partiu Entrega</span>
         </a>
-
-        <nav class="site-nav" aria-label="Navegação principal">
-          <a href="./index.html">Landing Page</a>
-          <a href="#direitos">Direitos</a>
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a href="./index.html">Início</a>
+          <a href="#direitos">Seus direitos</a>
           <a href="#contato">Contato</a>
+          <a class="nav-download" href="./index.html#baixar">Baixar</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
+    <div class="policy-page">
       <main class="policy-main">
         <section class="policy-hero">
+          <div class="wrap">
           <p class="eyebrow">Política de Privacidade</p>
           <h1>Como o <span data-config="brandName">Partiu Entrega</span> trata dados pessoais</h1>
           <p>
@@ -53,9 +51,10 @@
               <strong data-config="updatedAt">13 de abril de 2026</strong>
             </div>
           </div>
+        </div>
         </section>
 
-        <article class="policy-content">
+        <article class="wrap policy-content">
           <section>
             <h2>1. Quem é o responsável pelo tratamento</h2>
             <p>
@@ -400,27 +399,22 @@
         </article>
       </main>
 
-      <footer class="site-footer">
-        <div>
-          <strong data-config="brandName">Partiu Entrega</strong>
-          <p>
-            Política de privacidade revisada para publicação pública do app, com
-            foco em clareza e adequação ao fluxo atual do produto.
-          </p>
-        </div>
+    </div>
 
-        <div class="footer-links">
-          <a href="./index.html">Voltar para a landing</a>
-          <a data-config-link="contactMailto" href="mailto:serratdiego@gmail.com"
-            >Contato de privacidade</a
-          >
-        </div>
-
-        <p class="footer-meta">
+    <footer class="footer">
+      <div class="wrap">
+        <p class="footer-note">
           Última atualização: <span data-config="updatedAt">13 de abril de 2026</span>
         </p>
-      </footer>
-    </div>
+        <div class="footer-row">
+          <span>Copyright © 2026 <span data-config="brandName">Partiu Entrega</span>. Todos os direitos reservados.</span>
+          <nav aria-label="Rodapé">
+            <a href="./index.html">Início</a>
+            <a data-config-link="contactMailto" href="mailto:partiu.entrega.app@gmail.com">Contato de privacidade</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
   </body>

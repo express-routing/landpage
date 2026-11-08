@@ -2,6 +2,7 @@ const siteConfig = {
   brandName: "Partiu Entrega",
   controllerName: "Equipe Partiu Entrega",
   contactEmail: "partiu.entrega.app@gmail.com",
+  appStoreUrl: "https://apps.apple.com/br/app/partiu-entrega/id6815867232",
   playStoreUrl:
     "https://play.google.com/store/apps/details?id=com.diegoserrat.deliveryrouting",
   updatedAt: "13 de abril de 2026",
